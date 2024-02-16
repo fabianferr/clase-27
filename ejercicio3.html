@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var estado=true;
+        setTimeout("cambio()",1000);
+        function cambio()
+        {
+        estado=!estado;
+        if(estado==true){
+        img.src="Foto1.jpg";
+        }
+        else{
+        img.src="Foto2.jpg";
+        }
+        setTimeout("cambio()",1000);
+        }
+        </script>
+</head>
+<body>
+    <center><h2>Imagenes que cambian solas</h2>
+        <br><br>
+        <img name="img" src="Foto1.jpg" width="100" height="150">
+        </center>
+</body>
+</html>
